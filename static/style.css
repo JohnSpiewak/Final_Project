@@ -24,19 +24,31 @@ body{
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    background-color: lightgray;
+    border: solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 33%;
+    margin-left: 33%;
 }
 
 .container3{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 33%;
+    margin-right: 33%;
+    justify-content: space-around;
+    background-color: lightgray;
+    border: solid black;
+    gap: 5px;
+    padding: 10px;
 }
 
 .button{
     margin: 2px;
-    width: 50px;
-    height: 25px;
+    width: 100px;
+    height: 30px;
     background: #E6E6FA;
     padding: 2px;
     text-align: center;
@@ -45,3 +57,28 @@ body{
     font-weight: bold;
     line-height: 25px;
 }
+
+.header_main{
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+.playlist{
+    margin-left: 35px;
+}
+
+
+
+
+
+
+

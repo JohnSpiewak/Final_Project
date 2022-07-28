@@ -6,25 +6,34 @@
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <h1 class="header_main">Song Details</h1>
+    </div>
+    <ul class="nav navbar-nav">
+        <a class=button href="/home">Playlist</a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <a class=button href="/logout">Logout</a>
+    </ul>
+    </div>
+</nav>
 <div class="container3">
     <div>
-        <h1>{{title}}</h1>
+        <h2>{{title}}</h2>
     </div>
     <div>
-        <h2>Artist: {{artist}}</h2>
+        <h3>Artist: {{artist}}</h3>
     </div>
     <div>
-        <h2> Album: {{album}}</h2>
+        <h3> Album: {{album}}</h3>
     </div>
     <div>
-        <h2>Release Date: {{release_date}}</h2>
+        <h3>Release Date: {{release_date}}</h3>
     </div>
     <div>
-        <h5>Added By: {{first_name}} {{last_name}}</h5>
-    </div>
-    <div>
-        <a class=button href="/home">TV Shows</a>
-        <a class=button href="/logout">Logout</a>
+        <h6>Added By: {{first_name}} {{last_name}}</h6>
     </div>
 </div>
 

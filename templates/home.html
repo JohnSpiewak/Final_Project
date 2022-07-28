@@ -4,10 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
-    <h1>Welcome {{user.first_name}}</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h2>Playlist</h2>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <h1 class="header_main">Welcome {{user.first_name}}</h1>
+    </div>
+    <ul class="nav navbar-nav">
+        <a class=button href="/add_song">Add a Song!</a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <a class=button href="/logout">Logout</a>
+    </ul>
+    </div>
+</nav>
+    <h2 class="playlist">Playlist</h2>
     <table class="table table-striped table-dark">
         <thead>
         <tr>
@@ -39,6 +53,4 @@
         {% endfor %}
         </tbody>
     </table>
-    <a class=button href="/add_song">Add a Song!</a>
-    <a class=button href="/logout">Logout</a>
 </body>

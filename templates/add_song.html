@@ -16,30 +16,41 @@
         </ul>
     {% endif %}
 {% endwith %}
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <h1 class="header_main">Add New Song</h1>
+    </div>
+    <ul class="nav navbar-nav">
+        <a class=button href="/home">Playlist</a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <a class=button href="/logout">Logout</a>
+    </ul>
+    </div>
+</nav>
 <div class="container2">
         <form action="/create_song" method="post">
             <div>
                 <h2>Add Song</h2>
-                <label for="">Title</label>
+                <label for="">Title: </label>
                 <input type="text" name="title">
             </div>
             <div>
-                <label for="">Artist</label>
+                <label for="">Artist: </label>
                 <input type="text" name="artist">
             </div>
             <div>
-                <label for="">Album</label>
+                <label for="">Album: </label>
                 <input type="textarea" name="album">
             </div>
             <div>
-                <label for="">Release Date</label>
+                <label for="">Release Date: </label>
                 <input type="date" name="release_date">
             </div>
             
             <div>
                 <button>Submit</button>
-                <a class=button href="/home">Playlist</a>
-                <a class=button href="/logout">Logout</a>
             </div>
         </form>
     </div>
